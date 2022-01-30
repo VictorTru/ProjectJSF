@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Login</title>
+	<!-- <h:outputStylesheet library="css" name="styles.css"></h:outputStylesheet> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+</h:head>
+
+<h:body>
+
+	<div class="ui_fluid">
+
+		<h:form id="formLogin">
+
+			<p:growl id="growl" />
+
+			<p:panel id="pnLogin" name="Inicio de Seccion"
+				style="text-align: center">
+
+				<p:graphicImage name="imgs/user.png" width="20%" />
+
+				<p:panelGrid columns="2" id="pnlgridLogin"
+					columnClasses="ui-g-12 ui-md-12 , ui-g-12 ui-md-12" layout="grid"
+					styleClass="ui-panelgrid-blank ui-fluid">
+
+					<p:outputLabel value="Usuario: " styleClass="colorText"
+						for="txtUsuario" style="float: left"></p:outputLabel>
+					<p:inputText id="txtUsuario" value="#{loginController.usuario}"
+						required="true" requiredMessage="Usuario Incorrecto"></p:inputText>
+
+					<p:outputLabel value="Contraseña: " styleClass="colorText"
+						for="txtPassword" style="float: left"></p:outputLabel>
+					<p:password id="txtPassword" value="#{loginController.password}"
+						required="true" requiredMessage="Password Incorrecto"></p:password>
+
+					<p:commandButton value="Entrar"
+						action="#{loginController.ingresar}" update="pnlgridLogin, growl"></p:commandButton>
+				</p:panelGrid>
+			</p:panel>
+
+
+		</h:form>
+
+	</div>
+
+</h:body>
+
+</html>
