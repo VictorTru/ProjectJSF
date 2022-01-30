@@ -9,6 +9,7 @@ import java.util.List;
 import com.pe.victor.entity.Empleado;
 
 /**
+<<<<<<< HEAD
  * @author Victor Trujillo CH Clase que permite realizar la logica de negocio
  *         para empleados.
  */
@@ -148,5 +149,6 @@ public class EmpleadoService {
 
 		return empleados;
 	}
+
 
 }

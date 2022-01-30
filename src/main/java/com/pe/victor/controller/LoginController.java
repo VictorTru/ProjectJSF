@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.pe.victor.controller;
 
 import java.io.IOException;

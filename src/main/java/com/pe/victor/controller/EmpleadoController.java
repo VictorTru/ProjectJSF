@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.pe.victor.controller;
 
 import java.util.List;
@@ -102,3 +100,4 @@ public class EmpleadoController {
 	
 	
 }
+
