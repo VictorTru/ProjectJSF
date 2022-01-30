@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      
+<h:head>
+	<title>Lista de Empleados</title>
+	<h:outputStylesheet library="css" name="styles.css"></h:outputStylesheet>
+</h:head>      
+
+<h:body>
+
+		<!-- ::::::::::::: AGREGA AQUI LA TABLA DE EMPLEADOS ::::::::::::::::::: -->
+								TABLA DE EMPLEADOS
+							
+
+	<h:dataTable id="tblEmpleados" var="empleado" value="#{empleadoController.empleads}" headerClass="headerTable" rowClasses="rowTable rowTableLine">
+		<h:column>
+			<f:facet name="header">CLIENTE</f:facet>
+			<h:outputText value="#{empleado.cliente}"></h:outputText>
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">NOMBRE</f:facet>
+			<h:outputText value="#{empleado.nombre}"></h:outputText>
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">APELLIDOS</f:facet>
+			<h:outputText value="#{empleado.apellidos}"></h:outputText>
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">DNI</f:facet>
+			<h:outputText value="#{empleado.dni}"></h:outputText>
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">DIRECCION</f:facet>
+			<h:outputText value="#{empleado.direccion}"></h:outputText>
+		</h:column>
+	</h:dataTable>
+</h:body>
+
+</html>
