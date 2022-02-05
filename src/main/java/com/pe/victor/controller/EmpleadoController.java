@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 package com.pe.victor.controller;
 
@@ -100,4 +101,3 @@ public class EmpleadoController {
 	
 	
 }
-
