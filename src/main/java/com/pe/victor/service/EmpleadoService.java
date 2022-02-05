@@ -10,6 +10,7 @@ import com.pe.victor.entity.Empleado;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @author Victor Trujillo CH Clase que permite realizar la logica de negocio
  *         para empleados.
  */
